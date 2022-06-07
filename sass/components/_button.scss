@@ -1,0 +1,116 @@
+/* button */
+button {
+    border-style: none;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    color: var(--primary-wight-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) inset;
+        }
+   
+    cursor: pointer;
+}
+
+.button-primary {
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    color: var(--primary-wight-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+        0px 3px 1px 0px #0000001a;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.button-secondary {
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 130px;
+
+    color: var(--title-text-color);
+    background-color: var(--secondary-botton-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    text-align: center;
+    cursor: pointer;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-wight-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+                0px 3px 1px 0px #0000001a;
+        }
+}
+
+
+.subscribe-button {
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+
+    color: var(--primary-wight-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) inset;
+        }
+}
+
+
+.send-button {
+    border-radius: 4px;
+    padding: 10px 56px;
+    cursor: pointer;
+
+    color: var(--primary-wight-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
