@@ -8,6 +8,34 @@ body {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+    color: var(--title-text-color);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        } 
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }

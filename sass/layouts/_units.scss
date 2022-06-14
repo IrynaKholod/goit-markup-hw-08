@@ -1,4 +1,10 @@
 /* Чем мы занимаемся */
+.units-section{
+   @media screen and(max-width: 1199px) {
+       display: none;
+   }
+}
+
 .units {
     display: flex;
 }

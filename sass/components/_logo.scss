@@ -3,8 +3,13 @@
 
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+  
+    @media screen and (min-width: 1200px ) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
@@ -13,4 +18,34 @@
   &:hover {
     color: var(--accent-color);
   }
+}
+.logo__accent {
+  color: var(--accent-color);
+}
+
+.logo__header {
+  display: inline-block;
+  padding-top: 26px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+
+  @media screen and (min-width: 780px) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.footer {
+  color: var(--secondary-botton-color);
+}
+.logo__footer {
+  color: var(--primary-white-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
