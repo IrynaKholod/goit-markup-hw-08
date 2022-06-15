@@ -16,6 +16,7 @@
     transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
 }
 
 .backdrop.is-hidden {
@@ -29,20 +30,26 @@
 }
 
 .modal-wraper {
-
     padding: 40px;
     width: 100%;
-    @media screen and(min-width: 528px)  {
-            max-width: 528px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(1);
-            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    
+    
+   
+        max-width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width: 1200px){
+    max-width: 528px;
     }
-
     background-color: rgba(255, 255, 255, 1);
 }
+
+
 
 .modal-btn {
     position: absolute;
@@ -89,7 +96,7 @@
     position: relative;
     display: block;
     margin-bottom: 10px;
-    transition-property: border, fill;
+    transition-property: border, fill, color;
     transition-duration: 2500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -107,6 +114,15 @@
 .form-group:focus-within .form-comment-input,
 .form-group:hover .form-comment-input {
     border: 1px solid #2196f3;
+}
+.form-group:focus-within .form-label,
+.form-group:hover .form-label {
+    color:#2196f3;
+}
+
+.form-group:focus-within .form-comment,
+.form-group:hover .form-comment {
+    color: #2196f3;
 }
 
 .form-policy {
@@ -166,10 +182,16 @@ textarea::placeholder {
 
 .form-policy-description {
     color: rgba(117, 117, 117, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
 
+    @media screen and (min-width: 1200px) {
+        
+    
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.7;}
 }
 
 .policy-href {

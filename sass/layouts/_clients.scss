@@ -24,7 +24,7 @@
         color: var(--accent-color);
         }
 
-    width: 210px;
+    max-width: 210px;
     height: 92px;
 
     @media screen and(min-width: 768px) {
@@ -44,7 +44,7 @@
     margin: 15px;
     
 
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 90px) / 3);
     }
 
