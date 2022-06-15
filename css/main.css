@@ -1500,8 +1500,8 @@ img {
 }
 
 .subscribe-form {
-  width: 100%;
-  text-align: center;
+  width: 358px;
+  height: 50px;
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -1518,14 +1518,6 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 1200px) {
-  .subscribe-form {
-    width: 570px;
-    margin-left: auto;
-    text-align: start;
-  }
 }
 
 .subscribe-form:hover,
