@@ -53,6 +53,7 @@ margin-bottom: 50px;
     display: flex;
     width: 100%;
 
+
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px * 2) / 2);
         margin: 15px;
@@ -62,6 +63,11 @@ margin-bottom: 50px;
         flex-basis: calc((100% - 30px * 3) / 3);
         margin: 15px;
     }
+}
+.portfolio__item:not(:last-child) {
+    @media screen and (max-width: 767.9px) {
+    margin-bottom: 30px;
+   }
 }
 
 
