@@ -790,6 +790,12 @@ textarea::placeholder {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
